@@ -420,8 +420,9 @@ button.active {
   .writing-text {
     width: 100%;
   }
-  .banners p {
+  .banners p, h2 {
     max-width: 400px;
-    margin: 10px
+    margin: 10px;
+    text-align: center;
   }
 }
