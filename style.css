@@ -50,6 +50,9 @@ h1 {
 
 /*Style Guide End*/
 
+
+/* Desktop */
+
 .menu {
   font-family: 'Roboto Mono', serif;
 }
@@ -130,12 +133,13 @@ body {
   width: 50%;
   object-fit: contain;
   width: 450px;
-  margin-top: -20rem;
+  transform: translateY(-50%);
 }
 
 .header {
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .container {
@@ -157,6 +161,7 @@ body {
 
 .main-text {
   width: 50%;
+  height: auto;
 }
 
 .button-wrapper{
@@ -362,4 +367,61 @@ button.active {
   background-color: coral;
   color: white;
   font-size: 25px;
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 992px) {
+  .main-image {
+    display: none;
+    width: 0%;
+  }
+  .main-text {
+    width: 100%;
+    margin: 10px;
+  }
+  .main-text p {
+    text-align: center;
+  }
+  .logo img {
+    max-width: 400px;
+    object-fit: contain;
+    margin: auto;
+  }
+  .menu {
+    margin: auto;
+    width: 100%;
+  }
+  .menu ul {
+    text-align: center;
+  }
+  .header-wrapper {
+    background-color: white;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: static;
+  }
+  .header-text {
+    width: 100%;
+    margin-bottom: -2rem;
+    margin-top: -2rem;
+  }
+  .horn-image {
+    display: none;
+  }
+  .soccer-image {
+    display: none;
+  }
+  .writing-image {
+    display: none;
+  }
+  .writing-text {
+    width: 100%;
+  }
+  .banners p {
+    max-width: 400px;
+    margin: 10px
+  }
 }
