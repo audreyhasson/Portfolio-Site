@@ -440,7 +440,7 @@ button.active {
   .writing-text, .horn-text, .soccer-text {
     width: 100%;
   }
-  .banners p, h2 {
+  .banners p, h2, h3 {
     max-width: 400px;
     margin: 10px;
     text-align: center;
@@ -459,6 +459,25 @@ button.active {
   }
   .banners h2 {
     font-size: 30px;
+  }
+}
+
+/* baby phones -- kk this is for you <3 */
+
+@media only screen and (max-width: 400px) {
+  .logo img {
+    max-width: 300px;
+    object-fit: contain;
+    margin: auto;
+  }
+  .menu a {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2, h3 {
+    font-size: 24px;
   }
 }
 
