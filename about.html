@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Audrey Hasson | about </title>
-  <script src="port.js"></script>
 
   <!-- Bootstrap -->
   <link href="style.css" rel="stylesheet">
   <link rel="shortcut icon" href="siteimages/favicon.ico">
+  <!--owl carousel-->
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
   <!-- fonts  -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i|Roboto+Mono:400,400i,700,700i&display=swap" rel="stylesheet">
 
@@ -30,7 +32,7 @@
     <nav class="menu">
       <ul>
         <li><a href="index.html">home</a></li>
-        <li class="active"><a href="about.html">about</a></li>
+        <li class="active-n"><a href="about.html">about</a></li>
         <li><a href="portfolio.html">portfolio</a></li>
       </ul>
     </nav>
@@ -40,7 +42,7 @@
     <h1>about me</h1>
 </div>
 
-<div class ="banners">
+<div class="banners">
 
 <!--french horn banner-->
 <div class="fh-banner">
@@ -54,7 +56,7 @@
         </div>
     </div>
     <!--french horn togglables-->
-    <div class="fh-togglables-container">
+    <div class="fh-togglables-container toggle">
       <div class="fh-tab">
         <button class="tablinks" onclick="openInfo(event, 'PWO')">PWO</button>
         <button class="tablinks" onclick="openInfo(event, 'HSGTO')">HSGTO</button>
@@ -69,6 +71,25 @@
         <p>This upcoming school year will be my second year in Howard County's GT Orchestra. The ensemble is open to all Howard County high schoolers and is conducted by Benjamin Denne and Colin O'Bryan.</p>
       </div>
       <div id="CHS" class="tabcontent conditionalClose hideMe">
+        <h3>Centennial High School</h3>
+        <p>Centennial High School has one of the most competitive band programs in the nation. I'm really excited to be moving into the Wind Ensemble this year, conducted by David Matchim.</p>
+      </div>
+    </div>
+<!--swipe gestures for mobile-->
+    <div class="owl-carousel owl-theme swipies">
+      <div>
+        <br><br><br><br>
+        <h3 class="title-slide">swipe to read about accomplishments!</h3>
+      </div>
+      <div>
+        <h3>Peabody Wind Orchestra</h3>
+        <p>Peabody Preparatory is associated with Johns Hopkins University and includes ensembles such as the Wind Orchestra, conducted by Elijah Wirth. I auditioned into it last June and will be playing with it for the 2019-2020 school year.</p>
+      </div>
+      <div>
+        <h3>High School GT Orchestra</h3>
+        <p>This upcoming school year will be my second year in Howard County's GT Orchestra. The ensemble is open to all Howard County high schoolers and is conducted by Benjamin Denne and Colin O'Bryan.</p>
+      </div>
+      <div>
         <h3>Centennial High School</h3>
         <p>Centennial High School has one of the most competitive band programs in the nation. I'm really excited to be moving into the Wind Ensemble this year, conducted by David Matchim.</p>
       </div>
@@ -89,12 +110,23 @@
         </div>
     </div>
     <!--soccer toggleables-->
-    <div class="soccer-toggleables-container">
+    <div class="soccer-toggleables-container toggle">
       <div class="soccer-tab">
         <button class="tablinks" onclick="openInfo(event, 'SAC')">SAC</button>
       </div>
 
       <div id="SAC" class="tabcontent conditionalClose hideMe">
+        <h3>SAC United Blue</h3>
+        <p>I'm going into my sixth year of travel soccer and switching to a new team. I'm really excited for a new opportunity to learn the sport I love with different teammates and a new coach.</p>
+      </div>
+    </div>
+    <!--swipe gestures for mobile-->
+    <div class="owl-carousel owl-theme swipies">
+      <div>
+        <br><br><br><br>
+        <h3 class="title-slide">swipe to read about accomplishments!</h3>
+      </div>
+      <div>
         <h3>SAC United Blue</h3>
         <p>I'm going into my sixth year of travel soccer and switching to a new team. I'm really excited for a new opportunity to learn the sport I love with different teammates and a new coach.</p>
       </div>
@@ -115,7 +147,7 @@
         </div>
     </div>
     <!--writing toggleables-->
-    <div class="writing-toggleables-container">
+    <div class="writing-toggleables-container toggle">
       <div class="writing-tab">
         <button class="tablinks" onclick="openInfo(event, 'YAC')">YAC</button>
         <button class="tablinks" onclick="openInfo(event, 'Our-Voice')">Our Voice</button>
@@ -125,6 +157,21 @@
         <p>The YAC is a writing contest available to elementary and middle school students. I competed in this every year that I could, and finally, in seventh grade, I won the school wide contest and moved on to get an honorable mention at the county level.</p>
       </div>
       <div id="Our-Voice" class="tabcontent conditionalClose hideMe">
+        <h3>Our Voice</h3>
+        <p>Howard County publishes an annual pamphlet with writing and art, created by middle school students and nominated by teachers. I submitted short stories that reached the pamphlet every year.</p>
+      </div>
+    </div>
+    <!--swipe gestures for mobile-->
+    <div class="owl-carousel owl-theme swipies">
+      <div>
+        <br><br><br><br>
+        <h3 class="title-slide">swipe to read about accomplishments!</h3>
+      </div>
+      <div>
+        <h3>Young Author's Contest</h3>
+        <p>The YAC is a writing contest available to elementary and middle school students. I competed in this every year that I could, and finally, in seventh grade, I won the school wide contest and moved on to get an honorable mention at the county level.</p>
+      </div>
+      <div>
         <h3>Our Voice</h3>
         <p>Howard County publishes an annual pamphlet with writing and art, created by middle school students and nominated by teachers. I submitted short stories that reached the pamphlet every year.</p>
       </div>
@@ -139,6 +186,8 @@
 <footer class="footer">
   <p>©Audrey Hasson 2019</p>
 </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="port.js"></script>
 </body>
 </html>

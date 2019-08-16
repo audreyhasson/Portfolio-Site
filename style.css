@@ -88,7 +88,7 @@ h1 {
   background: #a7d676;
 }
 
-.active {
+.active-n {
   border: 2px solid #000000;
   padding-left: 0px;
   padding-right: 0px;
@@ -218,6 +218,8 @@ body {
   text-align: center;
   margin: auto;
 }
+
+
 
 .soccer-banner {
   background-color: #c1d6ab;
@@ -371,6 +373,14 @@ button.active {
 
 /*mobile*/
 
+
+
+@media only screen and (min-width: 992px) {
+  .toggle {
+    display: inherit;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .main-image {
     display: none;
@@ -430,4 +440,40 @@ button.active {
   .soccer-container, .fh-container, .writing-container {
     max-width: 100%;
   }
+  .toggle {
+    display: none;
+  }
+}
+
+/*messing with carousel*/
+
+.owl-nav {
+  display: none;
+}
+
+.owl-item p, h3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.title-slide h3 {
+  vertical-align: middle;
+}
+/*
+button.owl-dot span {
+  background: #4a4a4a!important;
+}
+
+button.owl-dot span .active {
+  background: #000!important;
+}
+*/
+
+.banners .owl-theme .owl-dots .owl-dot span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #6e6e6e;
+}
+
+.banners .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #000;
 }
