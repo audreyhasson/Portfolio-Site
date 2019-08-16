@@ -451,6 +451,9 @@ button.active {
   .toggle {
     display: none;
   }
+  .swipies p, h3 {
+    font-size: 14px;
+  }
 }
 
 /*messing with carousel*/
