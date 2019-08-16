@@ -401,6 +401,8 @@ button.active {
     display: flex;
     justify-content: center;
     margin: auto;
+  }
+  .header {
     position: static;
   }
   .header-text {
@@ -417,12 +419,15 @@ button.active {
   .writing-image {
     display: none;
   }
-  .writing-text {
+  .writing-text, .horn-text, .soccer-text {
     width: 100%;
   }
   .banners p, h2 {
     max-width: 400px;
     margin: 10px;
     text-align: center;
+  }
+  .soccer-container, .fh-container, .writing-container {
+    max-width: 100%;
   }
 }
