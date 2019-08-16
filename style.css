@@ -379,6 +379,14 @@ button.active {
   .toggle {
     display: inherit;
   }
+  .swipies p, h3 {
+    height: 0px;
+    display: none;
+  }
+  .owl-carousel {
+    display: none;
+    height: 0px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
